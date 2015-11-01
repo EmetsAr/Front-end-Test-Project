@@ -1,3 +1,8 @@
+$sprite-1x-ico1: 0px 0px 0px 0px 22px 22px 46px 46px '../../../dist/img/common/sprites@1x.png';
+$sprite-1x-ico2: 24px 0px -24px 0px 22px 22px 46px 46px '../../../dist/img/common/sprites@1x.png';
+$sprite-1x-ico3: 0px 24px 0px -24px 22px 22px 46px 46px '../../../dist/img/common/sprites@1x.png';
+$sprite-1x-ico4: 24px 24px -24px -24px 12px 9px 46px 46px '../../../dist/img/common/sprites@1x.png';
+$sprite-1x-ico5: 24px 35px -24px -35px 12px 9px 46px 46px '../../../dist/img/common/sprites@1x.png';
 
 @mixin sprite-width($sprite) {
   width: nth($sprite, 5);

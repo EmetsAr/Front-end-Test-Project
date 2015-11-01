@@ -23,7 +23,204 @@
 @import "common/layout";
 
 // Components
-
+body{
+	background:#eae2d7;
+}
 .holder{
-	    @extend %clearfix;
+	@extend %clearfix;
+}
+#content{
+	margin:0 0 40px;
+}
+.article-frame{
+	@extend %clearfix;
+	position:relative;
+	background:#fff;
+	-webkit-box-shadow:2px 2px 2px rgba(0,0,0,0.1);
+	box-shadow:2px 2px 2px rgba(0,0,0,0.1);
+	border-radius: 8px;
+	overflow:hidden;
+	&:before{
+		position:absolute;
+		top:0;
+		left:50%;
+		width:1px;
+		bottom:0;
+		background:url(../img/vert-separator.png);
+		content:"";
+	}
+}
+.column{
+	float: left;
+	width:50%;
+}
+.header-holder{
+	padding:5px 20px;
+	background: rgb(251,46,109);
+	overflow:hidden;
+	-webkit-box-shadow:0 2px 2px rgba(0,0,0,0.1);
+	box-shadow:0 2px 2px rgba(0,0,0,0.1);
+	background: -webkit-linear-gradient(rgba(251,46,109,1) 0%, rgba(247,40,104,1) 13%, rgba(237,25,90,1) 33%, rgba(230,16,82,1) 50%, rgba(230,16,82,1) 100%);
+	background: -o-linear-gradient(rgba(251,46,109,1) 0%, rgba(247,40,104,1) 13%, rgba(237,25,90,1) 33%, rgba(230,16,82,1) 50%, rgba(230,16,82,1) 100%);
+	background: linear-gradient(rgba(251,46,109,1) 0%, rgba(247,40,104,1) 13%, rgba(237,25,90,1) 33%, rgba(230,16,82,1) 50%, rgba(230,16,82,1) 100%);
+	h2{
+		text-transform:uppercase;
+		color:#fff;
+		font-size:15px;
+		font-weight:bold;
+		text-shadow:-1px -1px  1px rgba(0,0,0,0.2);
+	}
+}
+.article-holder{
+	padding:5px 20px;
+	h2{
+		margin:0;
+		font-size:13px;
+		line-height:30px;
+		font-weight:bold;
+		color:#2a1f0f;
+	}
+	img{
+		border:1px solid #eae1d4;
+		background:#fff;
+		padding:2px;
+		margin:0 20px 20px 0;
+	}
+	p{
+		margin:0;
+		font-size:12px;
+		line-height:20px;
+		color:#97866f;
+	}
+	.more{
+		color:#e61052;
+		position:relative;
+		font-size:12px;
+		line-height:30px;
+		display:inline-block;
+		vertical-align:middle;
+		&:after{
+			content:"";
+			width:12px;
+			height:9px;
+			display:inline-block;
+			vertical-align:middle;
+			margin:0 10px;
+			background:url(../img/common/sprites@1x.png) no-repeat -24px -24px;
+		}
+	}
+	.alignright{
+		width:57%;
+	}
+	.alignleft{
+		width:35%;
+	}
+}
+.alignleft{
+	float:left;
+}
+.alignright{
+	float: right;
+}
+.sidebar-frame{
+	background:#fff;
+	border-radius: 8px;
+	overflow:hidden;
+	margin:0 0 20px;
+	padding:15px 20px;
+	-webkit-box-shadow:2px 2px 2px rgba(0,0,0,0.1);
+	box-shadow:2px 2px 2px rgba(0,0,0,0.1);
+	h3{
+		margin:0 0 15px;
+		font-size:14px;
+		line-height:17px;
+		color:#e61052;
+		font-weight:bold;
+		text-transform:uppercase;
+		position:relative;
+		padding:0 0 15px;
+		&:after{
+			position:absolute;
+			bottom:0;
+			left:-20px;
+			right:-20px;
+			height:1px;
+			content:"";
+			background:url(../img/hor-separator.png);
+		}
+	}
+	.social{
+		margin:0 -17px 0 0;
+		padding:0;
+		list-style:none;
+		overflow:hidden;
+		li{
+			display:inline-block;
+			vertical-align:top;
+			margin:0 15px 0 0;
+			a{
+				color:#97866f;
+				font-size:12px;
+				line-height:22px;
+				position:relative;
+				display:inline-block;
+				vertical-align:middle;
+				&:before{
+					content:"";
+					position:relative;
+					width:22px;
+					height:22px;
+					margin:0 7px 0 0;
+					display:inline-block;
+					vertical-align:middle;
+					background:url(../img/common/sprites@1x.png) no-repeat 0 0;
+				}
+				&.twitter{
+					&:before{
+						background-position:-24px 0;
+					}
+				}
+				&.google{
+					&:before{
+						background-position:0 -24px;
+					}
+				}
+			}
+		}
+	}
+	.sidebar-list{
+		margin:0 0 15px;
+		padding:0;
+		list-style:none;
+		li{
+			vertical-align:middle;
+			a{
+				color:#97866f;
+				font-size:12px;
+				line-height:15px;
+				position:relative;
+				display:inline-block;
+				vertical-align:middle;
+				&:before{
+					content:"";
+					position:relative;
+					width:12px;
+					height:9px;
+					margin:-3px 13px 0 0;
+					display:inline-block;
+					vertical-align:middle;
+					background:url(../img/common/sprites@1x.png) no-repeat -24px -35px;
+				}
+			}
+		}
+	}
+	address{
+		font-size:12px;
+		line-height:20px;
+		color:#97866f;
+		font-style: normal;
+		span{
+			display:block;
+		}
+	}
 }
