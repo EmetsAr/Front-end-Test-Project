@@ -16,13 +16,24 @@ $('a.js_gallery').colorbox({
   loop:false,
   width:'500',
   slideshow:true,
+  slideshowAuto:false,
   onComplete:function(){
-
   }
 });
 
 $(window).load(function(){
   $('a.js_gallery').first().trigger("click");
+
+  $(document).bind("cbox_complete", function(){
+    setTimeout($.colorbox.next, 2000);
+    var opener=$('a.js_gallery'),
+        index= $.colorbox.element().index('a.js_gallery')
+    if(index==(opener.length-1)){
+      setTimeout(function() {
+             $.colorbox.close()
+      }, 2000);
+     }
+  });
 })
 
 
