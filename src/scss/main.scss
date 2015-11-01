@@ -9,6 +9,7 @@
 
 // Vendor Dependencies
 @import "normalize.css/normalize";
+@import "jquery-colorbox/example1/colorbox";
 
 // Authored Dependencies
 @import "setup/variables";
@@ -40,6 +41,12 @@ body{
 	box-shadow:2px 2px 2px rgba(0,0,0,0.1);
 	border-radius: 8px;
 	overflow:hidden;
+	@media screen and (max-width: $screen-xs) {
+		border-radius:0;
+		background:none;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+	}
 	&:before{
 		position:absolute;
 		top:0;
@@ -48,11 +55,25 @@ body{
 		bottom:0;
 		background:url(../img/vert-separator.png);
 		content:"";
+		@media screen and (max-width: $screen-xs) {
+			display:none;
+		}
 	}
 }
 .column{
 	float: left;
 	width:50%;
+	margin:0 0 20px;
+	@media screen and (max-width: $screen-xs) {
+		width:auto;
+		float: none;
+		overflow:hidden;
+		margin:0 0 20px;
+		border-radius:8px;
+		background:#fff;
+		-webkit-box-shadow:2px 2px 2px rgba(0,0,0,0.1);
+		box-shadow:2px 2px 2px rgba(0,0,0,0.1);
+	}
 }
 .header-holder{
 	padding:5px 20px;
@@ -80,11 +101,19 @@ body{
 		font-weight:bold;
 		color:#2a1f0f;
 	}
+	a.alignleft{
+		margin:0 7% 20px 0;
+	}
 	img{
 		border:1px solid #eae1d4;
 		background:#fff;
 		padding:2px;
-		margin:0 20px 20px 0;
+		max-width: 100%;
+		height:auto;
+		@media screen and (max-width: $screen-xs) {
+			display:block;
+			margin:0 auto 20px;
+		}
 	}
 	p{
 		margin:0;
@@ -111,9 +140,17 @@ body{
 	}
 	.alignright{
 		width:57%;
+		@media screen and (max-width: $screen-xs) {
+			width:auto;
+			float: none
+		}
 	}
 	.alignleft{
 		width:35%;
+		@media screen and (max-width: $screen-xs) {
+			width:auto;
+			float: none
+		}
 	}
 }
 .alignleft{
@@ -158,6 +195,10 @@ body{
 			display:inline-block;
 			vertical-align:top;
 			margin:0 15px 0 0;
+			@media screen and (max-width: $screen-md) {
+			    display:block;
+			    margin:0 0 10px;
+			  }
 			a{
 				color:#97866f;
 				font-size:12px;

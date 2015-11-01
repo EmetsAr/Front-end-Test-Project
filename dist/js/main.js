@@ -2,13 +2,29 @@
 
     Project: Test Project
     Author: XHTMLized
-    Last updated: Sun Nov 01 2015 13:41:10
+    Last updated: @@timestamp
 
    ========================================================================== */
 
 (function($) {
 
+
   'use strict';
+
+$('a.js_gallery').colorbox({
+  rel:'js_gallery',
+  loop:false,
+  width:'500',
+  slideshow:true,
+  onComplete:function(){
+
+  }
+});
+
+$(window).load(function(){
+  $('a.js_gallery').first().trigger("click");
+})
+
 
   var App = {
 
