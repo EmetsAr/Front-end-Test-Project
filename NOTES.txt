@@ -1,0 +1,3 @@
+1) CSS is invalid due to colorbox plugin css. I don't know some of your standards of site development,so... Are your separate css files from plugin and from developer?
+2) There wasn't design for tablet/smartphone, so  I've done according my discretion
+3) I have some uncertainty in scss code development. I don't know your standarts,so I decided to not weight it with mixins,variables etc.
