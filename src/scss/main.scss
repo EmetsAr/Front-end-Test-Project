@@ -9,7 +9,7 @@
 
 // Vendor Dependencies
 @import "normalize.css/normalize";
-@import "jquery-colorbox/example1/colorbox";
+@import "vendor/colorbox";
 
 // Authored Dependencies
 @import "setup/variables";
@@ -63,7 +63,7 @@ body{
 .column{
 	float: left;
 	width:50%;
-	margin:0 0 20px;
+	padding:0 0 7px;
 	@media screen and (max-width: $screen-xs) {
 		width:auto;
 		float: none;
@@ -79,6 +79,7 @@ body{
 	padding:5px 20px;
 	background: rgb(251,46,109);
 	overflow:hidden;
+	margin:0 0 21px;
 	-webkit-box-shadow:0 2px 2px rgba(0,0,0,0.1);
 	box-shadow:0 2px 2px rgba(0,0,0,0.1);
 	background: -webkit-linear-gradient(rgba(251,46,109,1) 0%, rgba(247,40,104,1) 13%, rgba(237,25,90,1) 33%, rgba(230,16,82,1) 50%, rgba(230,16,82,1) 100%);
@@ -93,9 +94,10 @@ body{
 	}
 }
 .article-holder{
-	padding:5px 20px;
+	padding:0 20px;
+	margin:0 0 11px;
 	h2{
-		margin:0;
+		margin:0 0 10px;
 		font-size:13px;
 		line-height:30px;
 		font-weight:bold;
@@ -110,13 +112,14 @@ body{
 		padding:2px;
 		max-width: 100%;
 		height:auto;
+		display:block;
 		@media screen and (max-width: $screen-xs) {
 			display:block;
 			margin:0 auto 20px;
 		}
 	}
 	p{
-		margin:0;
+		margin:0 0 5px;
 		font-size:12px;
 		line-height:20px;
 		color:#97866f;
@@ -140,13 +143,15 @@ body{
 	}
 	.alignright{
 		width:57%;
+		margin:-5px 0 0;
 		@media screen and (max-width: $screen-xs) {
 			width:auto;
-			float: none
+			float: none;
+			margin:0;
 		}
 	}
 	.alignleft{
-		width:35%;
+		width:36%;
 		@media screen and (max-width: $screen-xs) {
 			width:auto;
 			float: none
@@ -164,18 +169,18 @@ body{
 	border-radius: 8px;
 	overflow:hidden;
 	margin:0 0 20px;
-	padding:15px 20px;
+	padding:15px 20px 20px;
 	-webkit-box-shadow:2px 2px 2px rgba(0,0,0,0.1);
 	box-shadow:2px 2px 2px rgba(0,0,0,0.1);
 	h3{
-		margin:0 0 15px;
+		margin:0 0 18px;
 		font-size:14px;
 		line-height:17px;
 		color:#e61052;
 		font-weight:bold;
 		text-transform:uppercase;
 		position:relative;
-		padding:0 0 15px;
+		padding:0 0 19px;
 		&:after{
 			position:absolute;
 			bottom:0;
@@ -235,6 +240,7 @@ body{
 		list-style:none;
 		li{
 			vertical-align:middle;
+			margin:0 0 8px;
 			a{
 				color:#97866f;
 				font-size:12px;

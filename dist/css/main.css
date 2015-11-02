@@ -2,10 +2,17 @@
 
     Project: Test Project
     Author: XHTMLized
-    Last updated: @@timestamp
-@@toc
+    Last updated: Mon Nov 02 2015 12:52:28
+
+    1. Normalize
+    2. Colorbox
+    3. Sprites
+    4. Base
+    5. Utilities
+    6. Layout
 
    ========================================================================= */
+
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
@@ -34,6 +41,7 @@ body {
 
 /* HTML5 display definitions
    ========================================================================== */
+
 
 /**
  * Correct `block` display not defined for any HTML5 element in IE 8/9.
@@ -96,6 +104,7 @@ template {
 /* Links
    ========================================================================== */
 
+
 /**
  * Remove the gray background color from active links in IE 10.
  */
@@ -116,6 +125,7 @@ a:hover {
 
 /* Text-level semantics
    ========================================================================== */
+
 
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
@@ -192,6 +202,7 @@ sub {
 /* Embedded content
    ========================================================================== */
 
+
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
@@ -210,6 +221,7 @@ svg:not(:root) {
 
 /* Grouping content
    ========================================================================== */
+
 
 /**
  * Address margin not present in IE 8/9 and Safari.
@@ -250,6 +262,7 @@ samp {
 
 /* Forms
    ========================================================================== */
+
 
 /**
  * Known limitation: by default, Chrome and Safari on OS X allow very limited
@@ -433,6 +446,7 @@ optgroup {
 
 /* Tables
    ========================================================================== */
+
 
 /**
  * Remove most spacing between table cells.
@@ -837,6 +851,7 @@ a:hover {
     width: auto;
     float: none;
   }
+
 }
 
 /* Sidebar */
@@ -850,6 +865,7 @@ a:hover {
   .sidebar {
     display: none;
   }
+
 }
 
 /* Footer */
@@ -881,6 +897,7 @@ body {
     box-shadow: none;
     -webkit-box-shadow: none;
   }
+
 }
 
 .article-frame:before {
@@ -897,12 +914,13 @@ body {
   .article-frame:before {
     display: none;
   }
+
 }
 
 .column {
   float: left;
   width: 50%;
-  margin: 0 0 20px;
+  padding: 0 0 7px;
 }
 
 @media screen and (max-width: 480px) {
@@ -915,12 +933,14 @@ body {
     background: #fff;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   }
+
 }
 
 .header-holder {
   padding: 5px 20px;
   background: #fb2e6d;
   overflow: hidden;
+  margin: 0 0 21px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   background: -webkit-linear-gradient(#fb2e6d 0%, #f72868 13%, #ed195a 33%, #e61052 50%, #e61052 100%);
   background: linear-gradient(#fb2e6d 0%, #f72868 13%, #ed195a 33%, #e61052 50%, #e61052 100%);
@@ -935,11 +955,12 @@ body {
 }
 
 .article-holder {
-  padding: 5px 20px;
+  padding: 0 20px;
+  margin: 0 0 11px;
 }
 
 .article-holder h2 {
-  margin: 0;
+  margin: 0 0 10px;
   font-size: 13px;
   line-height: 30px;
   font-weight: bold;
@@ -963,10 +984,11 @@ body {
     display: block;
     margin: 0 auto 20px;
   }
+
 }
 
 .article-holder p {
-  margin: 0;
+  margin: 0 0 5px;
   font-size: 12px;
   line-height: 20px;
   color: #97866f;
@@ -993,17 +1015,20 @@ body {
 
 .article-holder .alignright {
   width: 57%;
+  margin: -5px 0 0;
 }
 
 @media screen and (max-width: 480px) {
   .article-holder .alignright {
     width: auto;
     float: none;
+    margin: 0;
   }
+
 }
 
 .article-holder .alignleft {
-  width: 35%;
+  width: 36%;
 }
 
 @media screen and (max-width: 480px) {
@@ -1011,6 +1036,7 @@ body {
     width: auto;
     float: none;
   }
+
 }
 
 .alignleft {
@@ -1026,19 +1052,19 @@ body {
   border-radius: 8px;
   overflow: hidden;
   margin: 0 0 20px;
-  padding: 15px 20px;
+  padding: 15px 20px 20px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-frame h3 {
-  margin: 0 0 15px;
+  margin: 0 0 18px;
   font-size: 14px;
   line-height: 17px;
   color: #e61052;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
-  padding: 0 0 15px;
+  padding: 0 0 19px;
 }
 
 .sidebar-frame h3:after {
@@ -1069,6 +1095,7 @@ body {
     display: block;
     margin: 0 0 10px;
   }
+
 }
 
 .sidebar-frame .social li a {
@@ -1107,6 +1134,7 @@ body {
 
 .sidebar-frame .sidebar-list li {
   vertical-align: middle;
+  margin: 0 0 8px;
 }
 
 .sidebar-frame .sidebar-list li a {
